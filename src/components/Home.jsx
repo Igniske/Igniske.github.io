@@ -22,7 +22,7 @@ function Home( {lang}){
                             <p className="block font-light text-2xl mt-0">{lang ? "Bienvenido! Soy" : "Welcome! I'm"}</p>
                             <p className="block text-white font-semibold text-2xl mt-0">Ignacio Correa</p>
                             <p className="block text-xl mt-0">{lang ? "Desarrolador web, Desarrollador React" : "Web developer, React developer"}</p>
-                            <p className="block text-lg mt-0">{lang ? "Persona autodidacta y tenaz que busca desarrollarse profesionalmente en el mundo de las Tecnologías de la Información, ejerciendo mis habilidades actuales y ganando experiencia en mis campos de interés." : "A self-learning and tenacious person who seeks to develop professionally in the world of Information Technology, excercising my actual skills and earning experience in my fields of interest."}</p>
+                            <p className="block text-lg mt-0">{lang ? "Autodidacta y tenaz que busca desarrollarse profesionalmente en el mundo de la tecnologia, ejerciendo mis habilidades actuales y ganando experiencia en mis campos de interés." : "A self-learning and tenacious person who seeks to develop professionally in the world of Information Technology, excercising my actual skills and earning experience in my fields of interest."}</p>
                             <div className="flex space-x-4">
                                 <img className="h-8 w-8 mt-4" src={Github}/>
                                 <img className="h-8 w-8 mt-4" src={LinkedIn}/>
