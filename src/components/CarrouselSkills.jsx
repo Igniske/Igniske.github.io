@@ -38,7 +38,7 @@ function CarrouselSkills( {children: slides, lang, descEsp, descEng}){
                     
                 </div>
                 <div className="lg:h-1/3 h-2/5 md:pt-4 w-full mx-auto">
-                        <h3 className="lg:h-1/2 w-full text-xl font-semibold text-blue-50 text-center lg:pt-4 mx-auto">{nombre[curr]}</h3>
+                        <h3 className="lg:h-1/2 w-full text-xl font-semibold text-blue-50 text-center mb-1 lg:pt-4 mx-auto">{nombre[curr]}</h3>
                         <p className="lg:h-1/2 w-full text-center text-blue-100 mx-auto">{(lang ? descEsp[curr] : descEng[curr])}</p>
                         
                     </div>
@@ -53,7 +53,7 @@ function CarrouselSkills( {children: slides, lang, descEsp, descEng}){
                     
                 </div>
                 <div className="lg:h-1/3 h-2/5 md:pt-4 w-full mx-auto">
-                        <h3 className="lg:h-1/2 w-full text-center text-xl font-semibold text-blue-50 lg:pt-4 mx-auto">{curr === slides.length - 1 ? nombre[0] : nombre[curr + 1]}</h3>
+                        <h3 className="lg:h-1/2 w-full text-center text-xl font-semibold mb-1 text-blue-50 lg:pt-4 mx-auto">{curr === slides.length - 1 ? nombre[0] : nombre[curr + 1]}</h3>
                         <p className="lg:h-1/2 w-full text-center text-blue-100 mx-auto">{curr === slides.length - 1 ? (lang ? descEsp[0] : descEng[0]) : (lang ? descEsp[curr + 1] : descEng[curr + 1])}</p>
                     </div>
             </div>
