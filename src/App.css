@@ -3,28 +3,3 @@
     transition: transform .2s ease-in-out;
 }
 
-.shake-manual:hover{
-    animation: shake 1s;
-  
-    animation-iteration-count: infinite;
-  }
-
-  .shake-manual{
-    animation: shake 1s;
-  
-    animation-iteration-count: 3s;
-  }
-  
-  @keyframes shake {
-    0% { transform: translate(30px, 30px) rotate(0deg); }
-    
-    20% { transform: translate(-50px, 20px) rotate(1deg); }
-    
-    40% { transform: translate(30px, -30px) rotate(1deg); }
-    
-    60% { transform: translate(-50px, 30px) rotate(0deg); }
-    
-    80% { transform: translate(-30px, -30px) rotate(1deg); }
-    
-    100% { transform: translate(30px, -40px) rotate(-1deg); }
-  }

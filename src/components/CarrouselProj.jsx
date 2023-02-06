@@ -33,10 +33,12 @@ function CarrouselProj( {children: projects, lang, descEspProj, descEngProj}){
         <div className="bg-gray-700 w-full h-min">
             <h3 className="lg:text-5xl text-4xl font-bold text-white lg:py-16 py-8 text-center">{lang ? "Mis proyectos" : "My projects"}</h3>
         <div className="flex w-full justify-center lg:justify-evenly space-x-4">
-            <button className="w-1/12 border-2 border-black bg-gray-300 hover:bg-stone-400 lg:h-28 md:h-16 h-12 rounded-full my-auto" onClick={prev}><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <button className="w-1/12 border-2 border-black bg-gray-300 hover:bg-stone-400 lg:h-28 md:h-16 h-12 rounded-full my-auto flex items-center justify-center" onClick={prev}>
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style={{ height: '100%' }}>
   <path d="M15.41 16.09l-4.58-4.59 4.58-4.59L14 5.5l-6 6 6 6z"/>
   <path d="M0-.25h24v24H0z" fill="none"/>
-</svg></button>
+</svg>
+</button>
             <a href={link[curr]} className="flex flex-wrap flex-row h-96 md:h-fit w-5/12 lg:w-64 bg-gray-500 rounded-xl border-4 border-yellow-300">
                 <div className="w-1/2 h-3/6 pt-8 overflow-hidden relative mx-auto ">
                     <div className="flex lg:pt-0 pt-8 md:pb-12 transition-transform ease out duration-500" style={{ transform: `translateX(-${curr * 100}%)`}}>
@@ -66,10 +68,12 @@ function CarrouselProj( {children: projects, lang, descEspProj, descEngProj}){
                         <p className="lg:h-1/2 w-full text-center text-blue-100 mx-auto">{curr === projects.length - 1 ? (lang ? descEspProj[0] : descEngProj[0]) : (lang ? descEspProj[curr + 1] : descEngProj[curr + 1])}</p>
                     </div>
             </a>
-            <button className="w-1/12 border-2 border-black bg-gray-300 hover:bg-stone-400 lg:h-28 md:h-16 h-12 rounded-full m-auto" onClick={next}><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <button className="w-1/12 border-2 border-black bg-gray-300 hover:bg-stone-400 lg:h-28 md:h-16 h-12 rounded-full m-auto flex items-center justify-center" onClick={next}>
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style={{ height: '100%' }}>
   <path d="M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z"/>
   <path d="M0-.25h24v24H0z" fill="none"/>
-</svg></button>
+</svg>
+</button>
         </div>
     </div>
     )

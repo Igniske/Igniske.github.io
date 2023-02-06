@@ -10,10 +10,10 @@ function Home( {lang}){
         <section className="h-fit" id="intro">
             <div className="h-screen w-full bg-gray-700 flex ">
                 <div className="lg:flex lg:flex-nowrap lg:flex-row w-5/6 h-5/6 lg:pt-12 mt-16 mx-auto">
-                    <div className="flex w-full lg:w-1/2 h-1/2 lg:h-full justify-center">
-                        <div className="bg-gradient-to-tr from-yellow-400 to-yellow-300 rounded-xl mt-6 lg:mr-32 md:mt-8 lg:mt-16 h-4/6 w-5/6 lg:h-3/5 lg:w-4/5 md:h-44 md:w-2/3 shake-manual transition transform -rotate-6">
+                    <div className="flex w-full lg:w-1/2 h-1/2 lg:h-min-screen align-middle justify-center">
+                        <div className="bg-gradient-to-tr from-yellow-400 to-yellow-300 rounded-xl mt-16 lg:mr-32 md:mt-8  lg:mt-16 h-4/6 w-5/6 lg:h-full lg:w-4/5 md:h-44 md:w-2/3 transition transform -rotate-6">
                           <div className="h-full w-full flex justify-center items-center transition transform rotate-6">
-                            <img className="lg:h-3/4 lg:w-2/4 md:h-36 md:w-36 h-4/6 w-3/6 rounded-lg border-8" src={Profile}/>
+                            <img className="lg:h-5/6 lg:w-2/5 md:h-36 md:w-36 h-4/6 w-3/6 rounded-lg border-8" src={Profile}/>
                           </div>
                         </div>
                       </div>
