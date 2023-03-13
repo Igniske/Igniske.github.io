@@ -4,7 +4,7 @@ import { useState, useRef, useEffect } from "react";
 function CarrouselSkills( {children: slides, lang, descEsp, descEng}){
     const [curr, setCurr] = useState(0)
     const intervalRef = useRef();
-    const nombre = ["HTML5", "CSS3", "JavaScript", "Bootstrap","Tailwind", "React.Js", "Node.Js", "TypeScript", "Bash", "PSQL", "Git"]
+    const nombre = ["HTML5", "CSS3", "JavaScript", "Bootstrap","Tailwind", "React.Js", "Node.Js", "TypeScript", "Bash", "PSQL", "Git","MongoDB"]
     
     const prev = () => setCurr((curr) => (curr === 0 ? slides.length - 1 : curr - 1 ))
     const next = () => setCurr((curr) => (curr === slides.length - 1 ? 0 : curr + 1))
@@ -29,7 +29,6 @@ function CarrouselSkills( {children: slides, lang, descEsp, descEng}){
   <path d="M15.41 16.09l-4.58-4.59 4.58-4.59L14 5.5l-6 6 6 6z"/>
   <path d="M0-.25h24v24H0z" fill="none"/>
 </svg>
-
 </button>
 
             <div className="flex flex-wrap flex-row lg:h-72 md:h-fit md:pb-8 h-60 w-5/12 lg:w-64 bg-gray-500 rounded-xl border-4 border-blue-600">
