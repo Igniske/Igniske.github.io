@@ -19,9 +19,10 @@ import Bootstrap from './media/skills/bootstrap.svg'
 import NodeJs from './media/skills/nodejs.svg'
 import Bash from './media/skills/bash.svg'
 import Mongo from './media/skills/Mongo.svg'
+import Csharp from './media/skills/Csharp.svg'
 
 import CarrouselProj from './components/CarrouselProj';
-import Tateti from './media/proyect-icons/tateti.svg'
+import LandingPage from './media/proyect-icons/landingpageico.png'
 import Calculadora from './media/proyect-icons/calculadora.png'
 import Dice from './media/proyect-icons/dice.png'
 import Ppt from './media/proyect-icons/ppt.png'
@@ -33,9 +34,9 @@ import Quiz from './media/proyect-icons/quiz.png'
 function App() {
 
     const [lang, setLang] = useState(true)
-    const descEsp = ["Mas de 1 año de experiencia", "Mas de 1 año de experiencia", "Mas de 1 año de experiencia", "Mas de 1 año de experiencia", "Menos de 1 año de experiencia", "Menos de 1 año de experiencia", "Menos de 1 año de experiencia", "Menos de 1 año de experiencia", "Mas de 1 año de experiencia","Menos de 1 año de experiencia", "Mas de 1 año de experiencia","Menos de 1 año de experiencia"]
-    const descEng = ["More than a year of experience", "More than a year of experience", "More than a year of experience", "More than a year of experience", "Less than a year of experience","Less than a year of experience","Less than a year of experience","Less than a year of experience", "More than a year of experience","Less than a year of experience", "More than a year of experience","Less than a year of experience"]
-    const descEspProj = ["El juego de tic tac toe para dos personas.",
+    const descEsp = ["Mas de 1 año de experiencia", "Mas de 1 año de experiencia", "Mas de 1 año de experiencia", "Mas de 1 año de experiencia", "Menos de 1 año de experiencia", "Menos de 1 año de experiencia", "Menos de 1 año de experiencia", "Menos de 1 año de experiencia", "Mas de 1 año de experiencia","Menos de 1 año de experiencia", "Mas de 1 año de experiencia","Menos de 1 año de experiencia","Menos de 1 año de experiencia"]
+    const descEng = ["More than a year of experience", "More than a year of experience", "More than a year of experience", "More than a year of experience", "Less than a year of experience","Less than a year of experience","Less than a year of experience","Less than a year of experience", "More than a year of experience","Less than a year of experience", "More than a year of experience","Less than a year of experience","Less than a year of experience"]
+    const descEspProj = ["Un sitio que trata sobre mi trabajo actual.",
      "Calculadora no cientifica creada con Javascript",
     "Puedes lanzar cierta cantidad de dados e inclusive alterar su valor.",
     "En este juego podrás hacer elecciones contra el programa.",
@@ -43,7 +44,7 @@ function App() {
     "Un simulador de una bateria que emite audios segun las teclas presionadas",
     "En esta app puedes contestar un preguntas sobre desarrollo front end."]
 
-    const descEngProj = ["The classic game Tic, tac, toe for two persons",
+    const descEngProj = ["A site that is based on my actual job.",
      "A non-cientific calculator made with Javascript",
     'You can roll any number of dices, and even change their values',
     "In this game you can play against the IA",
@@ -51,8 +52,8 @@ function App() {
     "A drum-kit simulator that plays audio based on the pressed keys",
     "In this app you can answer a quiz about front-end development"
   ]
-     const slides = [HtmlIcon, CssIcon, Js, Bootstrap, Tailwind, ReactIcon, NodeJs, TypeScript, Bash, Psql, GitIcon, Mongo]
-     const projects = [Tateti, Calculadora, Dice, Ppt, Timer, Drumkit, Quiz]
+     const slides = [HtmlIcon, CssIcon, Js, Bootstrap, Tailwind, ReactIcon, NodeJs, TypeScript, Bash, Psql, GitIcon, Mongo, Csharp]
+     const projects = [LandingPage, Calculadora, Dice, Ppt, Timer, Drumkit, Quiz]
     
   return (
     <div className="App font-serif">

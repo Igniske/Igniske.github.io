@@ -6,8 +6,8 @@ function CarrouselProj( {children: projects, lang, descEspProj, descEngProj}){
     const intervalRef = useRef();
     const prev = () => setCurr((curr) => (curr === 0 ? projects.length - 1 : curr - 1 ))
     const next = () => setCurr((curr) => (curr === projects.length - 1 ? 0 : curr + 1))
-    const nombreProj = ["Tateti", "Calculadora", "Simulador de dados", "Piedra, Papel o Tijera", "Contador Pomodoro", "Simulador de bateria", "Aplicacion de Quiz"]
-    const nameProj = ["TicTacToe", "Calculator", "Dice Simulator", "Rock, Paper & Scissors", "25 + 5 Clock", "Drumkit Simulator", "Quiz App" ]
+    const nombreProj = ["Landing page", "Calculadora", "Simulador de dados", "Piedra, Papel o Tijera", "Contador Pomodoro", "Simulador de bateria", "Aplicacion de Quiz"]
+    const nameProj = ["Landing page", "Calculator", "Dice Simulator", "Rock, Paper & Scissors", "25 + 5 Clock", "Drumkit Simulator", "Quiz App" ]
    
     useEffect(() => {
         intervalRef.current = setInterval(() => {
@@ -20,7 +20,7 @@ function CarrouselProj( {children: projects, lang, descEspProj, descEngProj}){
     }, []);
 
     const link =[
-        "https://codepen.io/Igniske/full/GRGpbwx",
+        "https://igniske.github.io/parada/",
         "https://codepen.io/Igniske/full/dyKVaZw",
         "https://codepen.io/Igniske/full/ZERyrqm",
         "https://codepen.io/Igniske/full/dyKomwm",
