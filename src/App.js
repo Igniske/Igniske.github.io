@@ -55,7 +55,7 @@ function App() {
      const projects = [Tateti, Calculadora, Dice, Ppt, Timer, Drumkit, Quiz]
     
   return (
-    <div className="App">
+    <div className="App font-serif">
       <Navbar lang={lang} setLang={setLang}></Navbar>
 
       <Home lang={lang}></Home>

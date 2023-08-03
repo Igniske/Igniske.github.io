@@ -19,8 +19,8 @@ function Navbar( {lang, setLang}){
             <a href="" className="w-min mx-auto hover:underline scale-manual">{lang ? "Certificados" : "Certifications"}</a>
         </div>
         <div className="flex w-1/2 lg:w-1/3 justify-end my-auto">
-            <button className="bg-blue-900 flex w-fit p-2 rounded-full border-2 border-blue-600  mr-4" onClick={langSwitch}>{(lang ? "Español" : "English")} <img src={lang ? AR : US} className="mx-4 lg:mx-2 md:mx-2 my-auto h-5 w-5"/></button>
-            <a className="bg-green-400 w-min p-2 rounded-full border-2 cursor-pointer border-green-700 mr-4">{lang ? "Curriculum" : "Resume"}</a>
+            <button className="bg-blue-900 flex w-fit p-2 rounded-full border-2 border-blue-600 mr-4" onClick={langSwitch}>{(lang ? "Español" : "English")} <img src={lang ? AR : US} className="mx-4 lg:mx-2 md:mx-2 my-auto h-5 w-5"/></button>
+            <a target="_blank" href="https://drive.google.com/file/d/1JzvBVa2KTmdDlnf0BiAvCJwHM2pxFyif/view?usp=drive_link" className="bg-green-400 w-min p-2 rounded-full border-2 cursor-pointer border-green-700 mr-4">{lang ? "Curriculum" : "Resume"}</a>
         </div>
     </nav>
     </div>
